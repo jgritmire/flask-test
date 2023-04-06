@@ -53,7 +53,7 @@ def new_user_recommender(user_input):
 @application.route('/')
 @application.route("/hello")
 def index():
-    flash("Please enter the names of 3 games separated by backslashes (\)")
+    flash("Please enter the names of 3 games separated by foward slashes (/)")
     return render_template("index.html")
 
 @application.route("/greet", methods=["POST", "GET"])
