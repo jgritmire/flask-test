@@ -6,7 +6,7 @@ body {
 p {
     color: white;
     font: Shanti;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 20px;
 }
 
@@ -23,11 +23,11 @@ input {
     border-radius: 10px;
     font: Shanti;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 #greet {
     background-color: red;
     color: white;
-    width: 200px;
+    width: 325px;
 }
