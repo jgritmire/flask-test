@@ -1,3 +1,9 @@
+h1 {
+  color: red;
+  font: Shanti;
+  font-size: 4em;
+}
+
 body {
     background-color: slategray;
     text-align: center;
@@ -11,7 +17,7 @@ p {
 }
 
 img {
-    margin: 60px 0 30px 0;
+    margin: 10px 0 10px 0;
     width: 250px;
 }
 
