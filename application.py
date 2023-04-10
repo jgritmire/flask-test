@@ -43,7 +43,7 @@ def new_user_recommender(user_input):
         in_both_3 = intersection(review_recs_3, product_recs_3)
 
         final_recs = []
-        for i in range(0, 10):
+        for i in range(0, min([len(in_both_1), len(in_both_2), len(in_both_3)])):
             if in_both_1[i] not in final_recs:
                 if in_both_1[i] not in liked_games:
                     final_recs.append(in_both_1[i])
