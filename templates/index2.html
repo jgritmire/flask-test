@@ -6,15 +6,20 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
     </head>
     <header>
-        <h1> Games with Jake </h1>
+        <h1> Recommendations with Jake </h1>
     </header>
     <body>
         <br>
-        <p> Please enter the names of 3 board games separated by forward slashes (/) : </p>
         <form action="greet" method="post">
           <input type="text" name="name_input">
           <br>
-          <input type="submit" value="Get Recommendations!" id="greet">
+          <input type="submit" value="Fix my Recs!" id="greet">
+          <p>If one of the following titles is incorrect, please type that title into the space above and search again</p>
+          <br>
+          <p> My recommendations for you based on</p>
+          <p>{{games_fuzzy_1}}, {{games_fuzzy_2}}, and {{games_fuzzy_3}}</p>
+          <p>are:</p>
+          <br>
           <p> {{game_1}} </p>
           <img src="{{ cover_art_1 }}">
           <p> {{game_2}} </p>

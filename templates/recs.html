@@ -11,10 +11,13 @@
     <body>
         <br>
         <p> Please enter the names of 3 board games separated by forward slashes (/) : </p>
-        <form action="greet" method="post">
+        <form action="recs" method="post">
           <input type="text" name="name_input">
           <br>
           <input type="submit" value="Get Recommendations!" id="greet">
+          <p>Based on</p>
+          <p>{{ user_input_1 }}, {{ user_input_2 }}, {{ user_input_3 }}</p>
+          <p>I recommend: </p>
           <p> {{game_1}} </p>
           <img src="{{ cover_art_1 }}">
           <p> {{game_2}} </p>
@@ -36,6 +39,7 @@
           <p> {{game_10}} </p>
           <img src="{{ cover_art_10 }}">
           <br>
+
         </form>
     </body>
 </html>
